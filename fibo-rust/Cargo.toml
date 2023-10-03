@@ -1,0 +1,12 @@
+[package]
+name = "fibo-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8.5"
+
+[dependencies.malachite]
+version = "0.3.0"
+default-features = false
+features = ["naturals_and_integers"]

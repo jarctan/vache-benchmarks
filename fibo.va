@@ -1,0 +1,11 @@
+fn fibo(i: int) -> int {
+    if i <= 1 {
+        i
+    } else {
+        fibo(i - 1) + fibo(i - 2)
+    }
+}
+
+fn main() {
+    debug(fibo(42));
+}

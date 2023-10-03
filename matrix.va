@@ -1,0 +1,32 @@
+fn main() {
+    // Create the matrix
+    var n = 8000;
+
+    var model: [int] = [];
+    var j = 0;
+    while j < n {
+        push(@model, j);
+        j = j + 1;
+    }
+    var a: [[int]] = [];
+    var i = 0;
+    while i < n {
+        push(@a, model);
+        i = i + 1;
+    }
+
+    debug(a[3][0]);
+
+    // Transpose it
+    var i = 0;
+    while i < n {
+        var j = 0;
+        while j < i {
+            a[i][j] <-> a[j][i];
+            j = j + 1;
+        }
+        i = i + 1;
+    }
+
+    debug(a[3][0]);
+}
